@@ -46,7 +46,8 @@ void findRowSum(const double *a, double *b, int n, int m){
 	for(int i = 0 ; i < n ; i++){
 		sum = 0;
 		for(int j = 0 ; j < m ; j++){
-			sum += *((a + i)+j);
+			sum += *a;
+			a++;
 		}
 		*(b + i) = sum;
 	}
